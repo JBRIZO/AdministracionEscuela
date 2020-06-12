@@ -43,7 +43,7 @@ public class LectorTeclado {
         while (!m_SC.hasNextDouble())
         {
             m_SC.next();
-            System.out.println(mensajeReintento);
+            System.err.println(mensajeReintento);
         }
 
         retval = m_SC.nextDouble();

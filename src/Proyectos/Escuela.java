@@ -113,7 +113,7 @@ public class Escuela {
             }
             if (control == estudiantes.size())
             {
-                System.out.println("ID invalido");
+                System.err.println("ID invalido");
             }
         }
 
