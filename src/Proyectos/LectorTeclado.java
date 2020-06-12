@@ -21,21 +21,6 @@ public class LectorTeclado {
         m_SC = new Scanner(System.in);
     }
 
-    public int obtenerEntero(int valorPorDefecto, String mensaje)
-    {
-        int retval = valorPorDefecto;
-
-        try
-        {
-            retval = m_SC.nextInt();
-        }
-        catch (Exception e)
-        {
-            System.out.println(mensaje);
-        }
-
-        return retval;
-    }
 
     public int obtenerEnteroValidado(String mensajeReintento)
     {

@@ -7,8 +7,6 @@ public class Escuela {
     private ArrayList<Estudiante> estudiantes = new ArrayList<>();
     private ArrayList<Maestro> maestros = new ArrayList<>();
     private ArrayList<Double> ingresos = new ArrayList<Double>();
-    private int corr;
-    private int corr2 = 1;
 
     public ArrayList<Estudiante> getEstudiantes() {
         return estudiantes;
@@ -26,10 +24,6 @@ public class Escuela {
         this.maestros = maestros;
     }
 
-    public void agregarMaestro(String nombre)
-    {
-
-    }
 
     public void ingresarEstudiante()
     {
@@ -44,8 +38,6 @@ public class Escuela {
         generarID(estudiante);
         System.out.println("Estudiante ingresado con ID: " + estudiante.getId());
         estudiantes.add(estudiante);
-        corr++;
-
     }
 
     public void ingresarMaestro()
